@@ -10,7 +10,7 @@ class About extends Component {
                 <h3>I do <u>things</u> sometimes</h3>
                 <br></br>
                 <p>
-                    from a very young age I've been suffering in this major haha
+                    Hi! Welcome to my website.
                 </p>
             </div>
         )
