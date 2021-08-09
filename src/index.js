@@ -1,32 +1,17 @@
-import { App } from "./App";
-console.clear();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-/**
- * [ ] Turn Antialias on
- *
- *
- */
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-const options = {
-  length: 400,
-  width: 20,
-  roadWidth: 9,
-  islandWidth: 2,
-  nPairs: 50,
-  roadSections: 3
-};
-
-const container = document.getElementById("app");
-console.log("Container", container);
-const myApp = new App(container, options);
-myApp.loadAssets().then(myApp.init);
-
-if (module && module.hot) {
-  // module.hot.accept((a, b) => {
-  //   // For some reason having this function here makes dat gui work correctly
-  //   // when using hot module replacement
-  // });
-  module.hot.dispose(() => {
-    if (myApp) myApp.dispose();
-  });
-}
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

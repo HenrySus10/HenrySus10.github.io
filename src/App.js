@@ -1,51 +1,45 @@
-import "./styles.css";
-import * as THREE from "three";
-import { BasicThreeDemo } from "./BasicThreeDemo";
-import { Road } from "./Road";
-import { CarLights } from "./CarLights";
-export class App extends BasicThreeDemo {
-  constructor(container, options) {
-    super(container);
-    // this.camera.position.z = 50;
-    // Dp stuff
+import React from 'react';
+import './App.css';
+import
+{
+    BrowserRouter as Router,
+    Route
+}   from "react-router-dom";
 
-    this.options = options;
-    this.camera.position.z = -5;
-    this.camera.position.y = 7;
-    this.camera.position.x = 0;
+import BurgerMenu from './components/BurgerMenu'
+//import Navbar from './components/Navbar'
+import Home from './contents/Home'
+import About from './contents/About'
+import Education from './contents/Education'
+import Skills from './contents/Skills'
+import Contact from './contents/Contact'
 
-    this.road = new Road(this, options);
-    this.leftLights = new CarLights(this, options, 0xff102a, 60);
-    this.rightLights = new CarLights(this, options, 0xfafafa, -60);
-  }
-  loadAssets() {
-    return new Promise((resolve, reject) => {
-      const manager = new THREE.LoadingManager(resolve);
 
-      manager.itemStart("test");
-      manager.itemEnd("test");
-    });
-  }
-  init() {
-    const options = this.options;
 
-    this.road.init();
-    this.leftLights.init();
-    this.leftLights.mesh.position.setX(
-      -options.roadWidth / 2 - options.islandWidth / 2
-    );
-
-    this.rightLights.init();
-    this.rightLights.mesh.position.setX(
-      options.roadWidth / 2 + options.islandWidth / 2
-    );
-
-    this.tick();
-  }
-  update(delta) {
-    let time = this.clock.elapsedTime;
-    this.leftLights.update(time);
-    this.rightLights.update(time);
-  }
-  dispose() {}
+function App() {
+    return(
+        
+        <Router>
+            <div className="App">
+                <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} width={'15%'}/>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/education">
+                    <Education />
+                </Route>
+                <Route path="/skills">
+                    <Skills />
+                </Route>
+                <Route path="/contact">
+                    <Contact />
+                </Route>
+            </div>
+        </Router>
+    )
 }
+
+export default App;
