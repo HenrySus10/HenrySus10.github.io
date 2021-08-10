@@ -5,15 +5,16 @@ import
     BrowserRouter as Router,
     Route
 }   from "react-router-dom";
-import { ReactTitle, MetaTags } from 'react-meta-tags';
+//import MetaTags from 'react-meta-tags';
+import Helmet from 'react-helmet';
 
-import BurgerMenu from './components/BurgerMenu'
+import BurgerMenu from './components/BurgerMenu';
 //import Navbar from './components/Navbar'
-import Home from './contents/Home'
-import About from './contents/About'
-import Education from './contents/Education'
-import Skills from './contents/Skills'
-import Contact from './contents/Contact'
+import Home from './contents/Home';
+import About from './contents/About';
+import Education from './contents/Education';
+import Skills from './contents/Skills';
+import Contact from './contents/Contact';
 
 
 
@@ -22,13 +23,6 @@ function App() {
         
         <Router>
             <div className="App">
-                <ReactTitle title="Henry Susantin"/>
-                <MetaTags>
-                    <meta property="og:image" content="https://www.pcgamesn.com/wp-content/uploads/2021/07/genshin-impact-kokomi-release-date.jpg" />
-                    <meta property="og:description" content="Henry Susantin is a current CSE student at UC Irvine with a love for coding, problem solving, and expanding his horizons." />
-                    <meta property="og:url"content="http://henrysus10.github.io" />
-                    <meta property="og:title" content="Henry Susantin" />
-                </MetaTags>
                 <BurgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} width={'15%'}/>
                 <Route exact path="/">
                     <Home />
