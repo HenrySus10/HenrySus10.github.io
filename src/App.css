@@ -148,7 +148,7 @@ min-height: 100vh;
 {
 /*padding: 100px ;*/
 position:fixed;
-background-color: #f4f5f9;
+background-color: #282625;
 flex:var(--condiv-flex);
 text-align: center;
 width: 100%;
