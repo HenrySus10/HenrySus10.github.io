@@ -1,0 +1,32 @@
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+  }
+  
+  #home-text {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 40%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #title {
+    font-size: 60px;
+    color:rgb(255, 195, 117)
+  }
+  
+  #typingeffect {
+    color: white;
+    margin: auto;
+    padding:10px;
+    width:50%;
+  }

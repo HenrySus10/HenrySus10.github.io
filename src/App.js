@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
+
 import
 {
     BrowserRouter as Router,
     Route
 }   from "react-router-dom";
-//import MetaTags from 'react-meta-tags';
-import Helmet from 'react-helmet';
 
 import BurgerMenu from './components/BurgerMenu';
-//import Navbar from './components/Navbar'
+import './css/Menu.css'
+
 import Home from './contents/Home';
 import About from './contents/About';
 import Education from './contents/Education';

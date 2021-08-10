@@ -5,6 +5,8 @@ import Social from '../components/Social'
 import ReactTypingEffect from 'react-typing-effect';
 import Particles from "react-particles-js"
 
+import '../css/Home.css'
+
 function BGParticles() {
     return (
       <>

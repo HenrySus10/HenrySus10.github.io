@@ -17,76 +17,6 @@ body {
   overflow: auto;
 }
 
-/* Individual item */
-.bm-item {
-  display: inline-block;
-
-  /* Our sidebar item styling */
-  text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
-  transition: color 0.2s;
-
-}
-
-/* Change color on hover */
-.bm-item:hover {
-  color: white;
-}
-
-/* The rest copied directly from react-burger-menu docs */
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #dadada;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 :root{
 --sidebar-flex:1.5;
@@ -109,39 +39,6 @@ font-family: 'Raleway';
 display: flex;
 width: 100vw;
 min-height: 100vh;
-}
-
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
-}
-
-#home-text {
-  pointer-events: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 40%;
-  width: 100%;
-  z-index: 1;
-}
-
-#title {
-  font-size: 60px;
-  color:rgb(255, 195, 117)
-}
-
-#typingeffect {
-  color: white;
-  margin: auto;
-  padding:10px;
-  width:50%;
 }
 
 .condiv
@@ -198,19 +95,6 @@ color: #9a9b9c;
 .social i:hover
 {
 color: #ffffff;
-}
-
-.subtopic
-{
-margin:10px 10px 30px 10px !important;
-}
-p
-{
-font-size: var(--fontsize-p);
-}
-h1,h2,h3,h4,p
-{
-margin: 10px;
 }
 
 .widecard
