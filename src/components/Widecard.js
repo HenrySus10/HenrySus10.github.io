@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Education.css'
 
 class Widecard extends Component {
     render() {
