@@ -10,6 +10,7 @@ p
 {
 font-size: var(--fontsize-p);
 width: 80%;
+margin:auto;
 height: auto;
 }
 h1,h2,h3,h4,p

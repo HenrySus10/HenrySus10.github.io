@@ -9,7 +9,7 @@ import '../css/Home.css'
 
 function BGParticles() {
     return (
-      <>
+      
         <Particles
           params={{
             background: {
@@ -44,7 +44,7 @@ function BGParticles() {
             },
           }}
         />
-      </>
+      
     );
   }
 
