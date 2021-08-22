@@ -9,6 +9,8 @@ margin:10px 10px 30px 10px !important;
 p
 {
 font-size: var(--fontsize-p);
+width: 80%;
+height: auto;
 }
 h1,h2,h3,h4,p
 {
