@@ -41,6 +41,11 @@ width: 100vw;
 min-height: 100vh;
 }
 
+.subtopic
+{
+margin:10px 10px 30px 10px !important;
+}
+
 .condiv
 {
 /*padding: 100px ;*/

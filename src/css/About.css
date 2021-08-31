@@ -1,19 +1,59 @@
 .about {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     color: whitesmoke;
 }
 
-.subtopic
-{
-margin:10px 10px 30px 10px !important;
+#content{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: 1;
 }
-p
+
+#aboutText
 {
+margin: auto;
+width: 50%;
 font-size: var(--fontsize-p);
-width: 80%;
-margin:auto;
-height: auto;
+text-align: center;
 }
 h1,h2,h3,h4,p
 {
 margin: 10px;
 }
+
+.modal {
+    font-size: 12px;
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
